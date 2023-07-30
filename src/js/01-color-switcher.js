@@ -6,7 +6,7 @@ let id;
 const onClickBtnStart = () => {
   isActive = true;
   setBtnState(isActive);
-  id = setTimeout(() => {
+  id = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
 };
